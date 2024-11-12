@@ -73,9 +73,9 @@ const renderMessage = (msg) => {
                 {messages.map(msg => renderMessage(msg))}
                 {showQuickResponses && (
                     <div className={styles.quickResponses}>
-                        <button onClick={() => quickResponse('Hello!')}>Hello</button>
-                        <button onClick={() => quickResponse('Give a quick tip for a developer')}>Quick Tip</button>
-                        <button onClick={() => quickResponse('Tell me a joke!')}>Tell a Joke</button>
+                        <button onClick={() => quickResponse('Translate the word "Hello" in Kikuyu!')}>Hello in Kikuyu</button>
+                        <button onClick={() => quickResponse('Translate "Where is the car" in Luo ')}>Quick Translation</button>
+                        <button onClick={() => quickResponse('Tell a joke in english then translate it in 3 kenyan local languages !')}>Tell a Joke then translate</button>
                     </div>
                 )}
             </div>
